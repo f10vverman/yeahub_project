@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: var(--font-size-p-s);
+  color: var(--filter-font-color);
+}
+
+.list {
+  display: flex;
+  gap: 5px;
+}
+
+.item {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  border: 1px solid #D2D2D2;
+  background: none;
+  cursor: pointer;
+  font-size: var(--font-size-p-m);
+  color: var(--color-black-700);
+  transition: 0.5s;
+  &:hover {
+    border-color: var(--color-purple-700);
+  }
+
+  &.active {
+    border-color: var(--color-purple-700);
+  }
+}

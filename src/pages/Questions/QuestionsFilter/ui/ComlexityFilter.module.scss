@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  font-size: var(--font-size-p-s);
+  color: var(--filter-font-color);
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+}
+
+.item {
+  border: 1px solid #D2D2D2;
+  border-radius: 12px;
+  padding: 8px 14px;
+  background: none;
+  cursor: pointer;
+  font-size: var(--font-size-p-m);
+  color: black;
+  transition: 0.5s;
+  &:hover {
+    border-color: var(--color-purple-700);
+  }
+
+  &.active {
+    border-color: var(--color-purple-700);
+  }
+}

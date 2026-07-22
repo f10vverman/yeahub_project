@@ -1,0 +1,110 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  width: 100%; // Гарантируем, что группа занимает всю ширину контейнера
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .label {
+    flex: 1;
+    text-align: left;
+    font-size: var(--font-size-p-m);
+    color: #474747;
+  }
+
+  .chevron {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.25s ease;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease;
+  padding: 0 8px; 
+
+  &.open {
+    margin-top: 8px;
+    max-height: 500px;
+  }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: var(--font-size-p-m);
+  color: #474747;
+  transition: background 0.15s ease;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    background: #F0E7FF;
+    color: #534AB7;
+  }
+
+  &.active {
+    background: #F0E7FF;
+    color: #534AB7;
+  }
+}
+
+.group.collapsed {
+  align-items: center; 
+
+  .groupHeader {
+    justify-content: center; 
+    padding: 10px 0; 
+    width: 44px; 
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .children {
+    padding: 0; 
+    width: 100%;
+    align-items: center; 
+
+
+  }
+
+  .navItem {
+    justify-content: center; /* Центрируем иконку вложенной ссылки */
+    padding: 0; /* Очищаем паддинги для точного позиционирования */
+    width: 44px; /* Делаем дочерние кнопки такими же аккуратными квадратами */
+    height: 44px;
+    flex-shrink: 0;
+  }
+}

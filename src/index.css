@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.15;
+}
+:root {
+  /* Font Sizes */
+  --font-size-none: 0;
+  --font-size-p-xxxs: 6px;
+  --font-size-p-xxs: 8px;
+  --font-size-p-xss: 10px;
+  --font-size-p-xs: 12px;
+  --font-size-p-s: 14px;
+  --font-size-p-m: 16px;
+  --font-size-p-l: 18px;
+  
+  --font-size-h-xxs: 14px;
+  --font-size-h-xs: 20px;
+  --font-size-h-s: 24px;
+  
+  --font-size-large-28: 28px;
+  --font-size-large-30: 30px;
+  --font-size-large-34: 34px;
+  
+  --font-size-h-m: 36px;
+  --font-size-h-l: 40px;
+  --font-size-h-xxl: 60px;
+
+  /* Font Typography */
+  --font-family: "Manrope", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+
+  --filter-font-color: rgb(100, 100, 100);
+  --color-purple-700: #6A0BFF;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  line-height: 1.15;
+}

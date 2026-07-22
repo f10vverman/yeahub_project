@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: var(--font-size-p-s);
+  color: var(--filter-font-color);
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+}
+
+.item {
+  flex: 1;
+  border: 1px solid #D3D3D3;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: none;
+  cursor: pointer;
+  font-size: var(--font-size-p-s);
+  color: black;
+  white-space: nowrap;
+  transition: 0.5s;
+  &:hover {
+    border-color: var(--color-purple-700);
+  }
+
+  &.active {
+    border-color: var(--color-purple-700);
+  }
+}

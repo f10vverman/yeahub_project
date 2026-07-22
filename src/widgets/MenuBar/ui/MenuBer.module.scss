@@ -1,0 +1,134 @@
+.menuBar {
+  grid-column: 1;
+  grid-row: 1 / -1; 
+  z-index: 2; 
+  background-color: #FFFFFF;
+   
+  display: flex;
+  flex-direction: column;
+}
+.toggleButton{
+  position: absolute;
+  align-self: flex-end;
+  top: 16px;
+  
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  img {
+    transition: transform 0.25s ease;
+  }
+}
+
+.collapsed {
+  .toggleButton img {
+    transform: rotate(180deg);
+  }
+}
+
+.wrapper{
+    display: flex;
+}
+
+.logotype{
+    display: flex;
+    align-items: center;
+    padding: 19px 124px 19px 20px;
+    border-bottom: 1px solid #d1d1d1;
+    gap: 8px;
+    .wordmark{
+        display: block;
+        width: 99px;
+        height: 32px;
+    }
+    .logo{
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+
+    }
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 20px 10px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: var(--font-size-p-m);
+  color: #474747;
+  transition: background 0.15s ease;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    background: #F0E7FF;
+    color: #534AB7;
+  }
+
+  &.active {
+    background: #F0E7FF;
+    color: #534AB7;
+  }
+}
+
+.assist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 50px 20px 20px;
+  
+}
+
+.supportBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #6A0BFF;
+  font-size: var(--font-size-p-m);
+  color: #FFFFFF;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid #FF3B6B;
+  cursor: pointer;
+  background: none;
+  font-size: var(--font-size-p-m);
+  color: #FF3B6B;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
